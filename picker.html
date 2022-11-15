@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--compiled manified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--material icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<!--datepicker-->
+<body class="teal darken-4">
+    <h3>Datepicker</h3>
+    <input type="text" class="datepicker" placeholder="birthdate ">
+
+    <h3>Timerpicker</h3>
+  <input type="text" class="timepicker" placeholder="timepicker">
+<br><br><br>
+<h3>javascript plugin</h3>
+<div class="col s12 m16">
+    <div class="chips"></div>
+    <div class="chips chips-initial"></div>
+</div>
+        
+    <!--JQUERY CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous">
+</script>
+<!--COMPILED MANIFIED JAVASCRIPT-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    //datepicker
+     $(document).ready(function(){
+    $('.datepicker').datepicker();
+    //timepicker
+  $(document).ready(function(){
+    $('.timepicker').timepicker();
+  });
+  });
+</script>
+
+<script>
+    //javascript plugin
+     $('.chips').chips();
+  $('.chips-initial').chips({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+</script>
+<script>
+     $('.chips-placeholder').chips({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+</script>
+</body>
+</html>
